@@ -5,16 +5,8 @@
 
 class WorldInterface;
 
-namespace Tga
-{
-	class DebugDrawer;
-}
-
 class ISteering
 {
-	friend class SteeringController;
-	friend class SteeringManager;
-
 public:
 	ISteering(Kinematic& aUserData) : character(aUserData) {}
 	~ISteering() {}
